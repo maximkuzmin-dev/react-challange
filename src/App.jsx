@@ -18,7 +18,7 @@ function App() {
       <Router>
         <nav className="flex justify-between">
           {users.map((user) => (
-            <NavLink className="w-full p-2" to={`/${user}/`}>
+            <NavLink className="w-full p-2" to={`/${user}/`} key={user}>
               <div className="w-full flex items-center justify-center h-10 rounded bg-gray-100 font-bold capitalize">
                 {user}
               </div>

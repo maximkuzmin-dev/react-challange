@@ -21,7 +21,7 @@ function ChatPage({ nickname, channel }) {
         <ul className="max-h-full px-5 py-3 overflow-y-auto">
           {messages.map(({ nickname, message }, index) => (
             <li key={index}>
-              <span className="font-bold">{nickname}: </span>
+              <span className="capitalize font-bold">{nickname}: </span>
               <span>{message}</span>
             </li>
           ))}
